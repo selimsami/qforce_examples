@@ -1,4 +1,5 @@
- lennard_jones = gaff 
+[ff]
+lennard_jones = gaff 
 
 [qm::job_script]
 #!/bin/bash
