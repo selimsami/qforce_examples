@@ -4,7 +4,7 @@ lennard_jones = gaff
 [qm::job_script]
 #!/bin/bash
 #SBATCH --time=1-00:00:00
-#SBATCH -o <outfile>.out
+#SBATCH -o <jobname>.out
 
 g16<<EOF
 <input>
