@@ -22,14 +22,11 @@ except:
 setup(
     # Self-descriptive entries which should always be present
     name='qforce_examples',
-    author='Selim Sami',
-    author_email='zhiyi.wu@bioch.ox.ac.uk',
     description=short_description,
     long_description=long_description,
     long_description_content_type="text/markdown",
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
-    license='MIT',
 
     # Which Python importable modules should be included when your package is installed
     # Handled automatically by setuptools. Use 'exclude' to prevent some specific
