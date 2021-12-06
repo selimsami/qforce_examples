@@ -23,7 +23,7 @@ setup(
 
     packages=['qforce_examples'],
     package_dir={'qforce_examples': 'src'},
-    # data_files={'examples': ['qforce_examples']},
+    package_data={'qforce_examples': ['../examples']},
 
     # Optional include package data to ship with your package
     # Customize MANIFEST.in if the general case does not suit your needs
