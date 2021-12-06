@@ -1,4 +1,2 @@
 [qm]
-memory = 1000
-n_proc = 12
 software = orca
