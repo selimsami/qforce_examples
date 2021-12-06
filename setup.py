@@ -7,10 +7,6 @@ from setuptools import setup, find_packages
 
 short_description = "Example and test files for Qforce.".split("\n")[0]
 
-# from https://github.com/pytest-dev/pytest-runner#conditional-requirement
-needs_pytest = {'pytest', 'test', 'ptr'}.intersection(sys.argv)
-pytest_runner = ['pytest-runner'] if needs_pytest else []
-
 try:
     with open("README.md", "r") as handle:
         long_description = handle.read()
@@ -29,6 +25,7 @@ setup(
     # Handled automatically by setuptools. Use 'exclude' to prevent some specific
     # subpackage(s) from being added, if needed
     packages=find_packages(),
+    package_dir = {'qforce_examples': 'src'},
 
     # Optional include package data to ship with your package
     # Customize MANIFEST.in if the general case does not suit your needs
@@ -36,7 +33,7 @@ setup(
     include_package_data=True,
 
     # Allows `setup.py test` to work correctly with pytest
-    setup_requires=[] + pytest_runner,
+    # setup_requires=[] + pytest_runner,
 
     # Additional entries you may want simply uncomment the lines you want and fill in the data
     # url='http://www.my_package.com',  # Website
