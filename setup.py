@@ -4,7 +4,6 @@ Example and test files for Qforce.
 """
 import sys
 from setuptools import setup, find_packages
-import versioneer
 
 short_description = "Example and test files for Qforce.".split("\n")[0]
 
@@ -25,8 +24,6 @@ setup(
     description=short_description,
     long_description=long_description,
     long_description_content_type="text/markdown",
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
 
     # Which Python importable modules should be included when your package is installed
     # Handled automatically by setuptools. Use 'exclude' to prevent some specific
