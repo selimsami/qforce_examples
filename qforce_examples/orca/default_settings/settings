@@ -2,8 +2,3 @@
 memory = 1000
 n_proc = 12
 software = orca
-[qm::software(orca)]
-hess_method = PBE0 D3 6-31+G* nopop nori
-opt_method = PBE0 D3 6-31+G* nopop nori
-c_method = PBE0 D3 6-31+G* nopop nori
-sp_method = PBE0 D3 6-31+G* nopop nori
