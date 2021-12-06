@@ -21,11 +21,9 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
 
-    # Which Python importable modules should be included when your package is installed
-    # Handled automatically by setuptools. Use 'exclude' to prevent some specific
-    # subpackage(s) from being added, if needed
-    packages=find_packages(),
-    package_dir = {'qforce_examples': 'src'},
+    packages=['qforce_examples'],
+    package_dir={'qforce_examples': 'src'},
+    # data_files={'examples': ['qforce_examples']},
 
     # Optional include package data to ship with your package
     # Customize MANIFEST.in if the general case does not suit your needs
