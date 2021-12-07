@@ -6,7 +6,7 @@ from pkg_resources import resource_filename
 Gaussian_default = {'xyz_file': resource_filename(__name__,
                                                   'gaussian/default_settings/propane.xyz'),
                     'out_file': resource_filename(__name__,
-                                                  'gaussian/default_settings/necessary_files/propane_hessian.log'),
+                                                  'gaussian/default_settings/necessary_files/propane_hessian.out'),
                     'fchk_file': resource_filename(__name__,
                                                    'gaussian/default_settings/necessary_files/propane_hessian.fchk'),
                     'fragments': resource_filename(__name__,
