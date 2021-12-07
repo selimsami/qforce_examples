@@ -1,4 +1,4 @@
 include MANIFEST.in
 
-graft examples
+graft qforce_examples
 global-exclude *.py[cod] __pycache__ *.so
