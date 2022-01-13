@@ -1,0 +1,42 @@
+* xyz   0   1
+  O     1.781919     0.061167     0.617891
+  N    -0.458507    -0.023540     0.222374
+  C    -0.589011     1.423735     0.290771
+  C    -1.641578    -0.835565     0.033520
+  C     0.765790    -0.571854     0.409042
+  H    -0.423534     1.788876     1.307544
+  H    -1.590125     1.706637    -0.030049
+  H     0.145753     1.900333    -0.358357
+  H    -2.360255    -0.689310     0.845882
+  H    -1.357275    -1.887450     0.015213
+  H    -2.137503    -0.597303    -0.911673
+  H     0.752325    -1.675728     0.353841
+ *
+
+%pal nprocs  24 end
+%maxcore  937
+
+%Compound
+
+New_Step
+! opt r2SCAN-3c nopop
+%base "DMF_initial"
+STEP_END
+
+New_Step
+! opt freq B3LYP D4 def2-TZVP def2/J RIJCOSX PModel nopop
+%base "DMF_opt"
+STEP_END
+
+New_Step
+! B3LYP D4 def2-TZVP def2/J RIJCOSX nbo nopop
+%base "DMF_nbo"
+%nbo NBOKEYLIST = "$nbo BNDIDX $end" end
+STEP_END
+
+New_Step
+! HF 6-31G* chelpg Hirshfeld nopop
+%base "DMF_charge"
+STEP_END
+
+END
