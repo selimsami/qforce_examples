@@ -34,6 +34,7 @@ Orca_default = {'xyz_file': resource_filename(__name__,
                                                   'orca/default_settings/necessary_files/fragments/CC_H8C3_d91b46644317dee9c2b868166c66a18c~1_sp.xyzact.dat'),
                 }
 
+
 Orca_default_NBO6 = {'xyz_file': resource_filename(__name__,
                                                   'orca/default_settings_NBO6/propane.xyz'),
                 'out_file': resource_filename(__name__,
@@ -45,3 +46,22 @@ Orca_default_NBO6 = {'xyz_file': resource_filename(__name__,
                 'coord_file': resource_filename(__name__,
                                                   'orca/default_settings_NBO6/necessary_files/propane_opt.xyz'),
                 }
+
+Gaussian_DMF = {'xyz_file': resource_filename(__name__,
+                                              'gaussian/DMF/DMF.xyz'),
+                'out_file': resource_filename(__name__,
+                                              'gaussian/DMF/necessary_files/DMF_hessian.log'),
+                'fchk_file': resource_filename(__name__,
+                                               'gaussian/DMF/necessary_files/DMF_hessian.fchk'),}
+
+ORCA_DMF = {'xyz_file': resource_filename(__name__, 'orca/DMF/DMF.xyz'),
+            'out_file': resource_filename(__name__,
+                                          'orca/DMF/necessary_files/DMF_hessian.out'),
+            'hess_file': resource_filename(__name__,
+                                           'orca/DMF/necessary_files/DMF_opt.hess'),
+            'pc_file': resource_filename(__name__,
+                                         'orca/DMF/necessary_files/DMF_charge.pc_chelpg'),
+            'coord_file': resource_filename(__name__,
+                                            'orca/DMF/necessary_files/DMF_opt.xyz'),
+            }
+
