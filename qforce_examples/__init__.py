@@ -81,7 +81,11 @@ xTB_default = {'xyz_file': resource_filename(__name__,
                                                   'xtb/default_settings/necessary_files/fragments/CC_H8C3_d91b46644317dee9c2b868166c66a18c~1.xtbscan.log'),
                 'fragments_angle' : resource_filename(__name__,
                                                   'xtb/default_settings/necessary_files/fragments/CC_H8C3_d91b46644317dee9c2b868166c66a18c~1.dat'),
-                }
+                'torsiondrive_charge': resource_filename(__name__,
+                                                  'xtb/torsiondrive/necessary_files/CC_H8C3_d91b46644317dee9c2b868166c66a18c~1.charges'),
+                'torsiondrive_energy': resource_filename(__name__,
+                                                  'xtb/torsiondrive/necessary_files/CC_H8C3_d91b46644317dee9c2b868166c66a18c~1.log')
+}
                 
 xTB_DMF = {'xyz_file': resource_filename(__name__,
                                                   'xtb/DMF/DMF.xyz'),
