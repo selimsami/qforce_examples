@@ -1,0 +1,4 @@
+[qm]
+software = xtb
+dihedral_scanner = xtb-torsiondrive
+
