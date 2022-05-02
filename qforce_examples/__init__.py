@@ -34,13 +34,6 @@ Orca_default = {'xyz_file': resource_filename(__name__,
                                                   'orca/default_settings/necessary_files/fragments/CC_H8C3_d91b46644317dee9c2b868166c66a18c~1_sp.xyzact.dat'),
                 }
 
-Gaussian_DMF = {'xyz_file': resource_filename(__name__,
-                                              'gaussian/DMF/DMF.xyz'),
-                'out_file': resource_filename(__name__,
-                                              'gaussian/DMF/necessary_files/DMF_hessian.log'),
-                'fchk_file': resource_filename(__name__,
-                                               'gaussian/DMF/necessary_files/DMF_hessian.fchk'),}
-
 xTB_default = {'xyz_file': resource_filename(__name__,
                                                   'xtb/default_settings/propane.xyz'),
                 'wbo_file': resource_filename(__name__,
